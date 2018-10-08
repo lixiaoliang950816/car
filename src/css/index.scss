@@ -1,0 +1,77 @@
+@import "common.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 3%;
+    li {
+        width: 100%;
+        height: 30px;
+        background: seashell;
+        display: flex;
+        color: #ccc;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.inn {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: seashell;
+    border-radius: 10px;
+    font-size: 60px;
+    color: pink;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.action {
+    display: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    overflow: hidden;
+    position: relative;
+    .icon-scroll {
+        width: 100%;
+        .list {
+            width: 100%;
+            >li {
+                width: 100%;
+                h2 {
+                    width: 100%;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    font-size: pxTorem(24px);
+                    height: 30px;
+                    line-height: 30px;
+                }
+                ol {
+                    width: 100%;
+                    background: #fff;
+                    li {
+                        width: 100%;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        border-bottom: 1px solid #eee;
+                    }
+                }
+            }
+        }
+    }
+}
